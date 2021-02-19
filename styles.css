@@ -1,8 +1,16 @@
+html{
+  background: linear-gradient(#134d71, #78a7c6, #f7e4bf);
+  min-height: 100%;
+  min-width: 100%;
+  display: flex;
+  justify-content: center;
+  font-family: 'Quicksand', sans-serif;
+}
+
 /* font-family: 'Quicksand', sans-serif;
 COLORS
 light-yellow - #f7e4bf;
 light-blue - #78a7c6;
 dark-blue - #134d71;
 white - #ffffff;
-black - #000000;
-*/
+black - #000000; */
