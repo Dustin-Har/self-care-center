@@ -19,6 +19,8 @@ body{
   display: flex;
   flex-direction: column;
   align-items: center;
+  height: 70vh;
+  justify-content: space-between;
 }
 
 
@@ -79,7 +81,7 @@ img{
 
 .message-box{
   background-color: #ffffff;
-  margin-top: 100px;
+  margin-top: 80px;
   border-radius: 30px;
   min-width:  650px;
   min-height:  150px;
