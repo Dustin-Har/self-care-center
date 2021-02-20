@@ -1,8 +1,98 @@
+*{
+  border: 2px dotted blue;
+  font-family: 'Quicksand', sans-serif;
+}
+html{
+  background: linear-gradient(#134d71, #78a7c6, #f7e4bf);
+  min-height: 100%;
+  min-width: 100%;
+}
+
+.self-care{
+  color: #ffffff;
+  align-items: center;
+}
+
+
+body{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 70vh;
+  justify-content: space-between;
+}
+
+
+.message-type{
+  margin-top: 15px;
+  max-width: 600px;
+  min-height: 100px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+  width: 70%;
+}
+
+.message-head{
+  color: #ffffff;
+  background-color: transparent;
+}
+
+
+.buttons{
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80%;
+  padding: 28px 24px 28px 28px;
+}
+
+.radio-butt{
+  display: flex;
+  justify-content: space-around;
+  width: inherit;
+}
+
+.message-dis{
+  background-color: #ffffff;
+  width: 80%;
+}
+
+.receive-message{
+  background-color: #134d71;
+  color: #ffffff;
+  border-radius: 5px;
+  width: fit-content;
+  margin-top: 16px;
+}
+
+
+img{
+  height: 50px;
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.message-box{
+  background-color: #ffffff;
+  margin-top: 80px;
+  border-radius: 30px;
+  min-width:  650px;
+  min-height:  150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 /* font-family: 'Quicksand', sans-serif;
 COLORS
 light-yellow - #f7e4bf;
 light-blue - #78a7c6;
 dark-blue - #134d71;
 white - #ffffff;
-black - #000000;
-*/
+black - #000000; */
