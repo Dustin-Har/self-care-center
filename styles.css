@@ -1,5 +1,4 @@
 *{
-  border: 2px dotted blue;
   font-family: 'Quicksand', sans-serif;
 }
 html{
@@ -48,6 +47,7 @@ body{
   align-items: center;
   width: 80%;
   padding: 28px 24px 28px 28px;
+  border-radius: 12px;
 }
 
 .radio-butt{
@@ -64,7 +64,7 @@ body{
 .receive-message{
   background-color: #134d71;
   color: #ffffff;
-  border-radius: 5px;
+  border-radius: 4px;
   width: fit-content;
   margin-top: 16px;
 }
@@ -73,10 +73,6 @@ body{
 img{
   height: 50px;
   width: auto;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
 }
 
 .message-box{
@@ -89,6 +85,10 @@ img{
   justify-content: center;
   align-items: center;
 }
+
+/* .hidden {
+  display: none!important;
+} */
 /* font-family: 'Quicksand', sans-serif;
 COLORS
 light-yellow - #f7e4bf;

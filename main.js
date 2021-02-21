@@ -1,15 +1,12 @@
-var head = document.querySelector(".self-care");
-var affri = document.querySelector(".affrimation");
-var mantr = document.querySelector(".mantra");
-var mesButton = document.querySelector(".receive-message");
-var box = document.querySelector(".message-box");
+affirmationButton = document.querySelector(".affirmation");
+mantraButton = document.querySelector(".mantra");
+receive = document.querySelector(".receive-message");
+messageBox = document.querySelector(".message-box");
 
-mesButton.addEventListener("click", function() {
-  message.innerText = "hello"
-})
+medPicture = document.querySelector(".med-picture");
+message = document.querySelector(".message-display");
 
-
-var affrimationQuotes = [
+var affirmationQuotes = [
   "I forgive myself and set myself free.",
   "I believe I can be all that I want to be.",
   "I am in the process of becoming the best version of myself.",
@@ -24,7 +21,6 @@ var affrimationQuotes = [
   "I honor my body by trusting the signals that it sends me.",
   "I manifest perfect health by making smart choices.",
 ];
-
 var mantraQuotes = [
   "Breathing in, I send myself love. Breathing out, I send love to someone else who needs it.",
   "Don’t let yesterday take up too much of today.",
@@ -42,3 +38,20 @@ var mantraQuotes = [
   "Onward and upward.",
   "I am the sky, the rest is weather.",
 ]
+
+receive.addEventListener("click", displayMessage);
+
+
+function displayMessage() {
+  medPicture.hidden = true;
+  if(affirmationButton.checked){
+    message.innerText = affirmationQuotes[getRandomIndex(affirmationQuotes)];
+  }else if (mantraButton.checked){
+    message.innerText = mantraQuotes[getRandomIndex(mantraQuotes)];
+  }
+}
+
+
+function getRandomIndex(array) {
+  return Math.floor(Math.random() * array.length);
+}
