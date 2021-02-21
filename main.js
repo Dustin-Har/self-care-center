@@ -41,8 +41,6 @@ var mantraQuotes = [
 
 receive.addEventListener("click", displayMessage);
 
-console.log(medPicture);
-console.log(message);
 
 function displayMessage() {
   medPicture.hidden = true;
