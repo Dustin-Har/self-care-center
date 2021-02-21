@@ -17,10 +17,10 @@
 
 ## Possible Future Additions
 
-* Disable buttons and provide error messages
-* Change a poster by clicking on the part to change
-* Be able to click a saved poster for a larger view
-* Allow users to re-arrange order of Saved Posters on page
+* create log-in screen
+* change colors on page
+* make your own quotes
+* save / delete quotes
 
 ## Technologies Used
 
