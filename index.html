@@ -3,22 +3,33 @@
   <head>
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap" rel="stylesheet">
-    <h1 class="self-care">✨Self Care Center✨</h1>
+    <script type="text/javascript" src="main.js" async></script>
   </head>
   <body>
-    <h2>What type of message?</h2>
+    <header class="self-care">
+      <h1>✨Self Care Center✨</h1>
+    </header>
     <section class="message-type">
-      <form>
-        <input type="radio" name="affrimation" value="affrimation">
-        <label for="affrimation">affrimation</label>
-        <input type="radio" name="mantra" value="mantra">
-        <label for="mantra">mantra</label>
-        <button type="button" class="receive-message">Receive message</button>
-      </form>
+      <div class="message-head">
+        <h2>What type of message?</h2>
+      </div>
+        <div class="buttons">
+          <div class="radio-butt">
+            <div class="aff-button">
+              <input type="radio" class="affirmation" name="message-type" value="affirmation">
+              <label for="affirmation">affirmation</label>
+            </div>
+            <div class="man-button">
+              <input type="radio" class="mantra" name="message-type" value="mantra">
+              <label for="mantra">mantra</label>
+            </div>
+          </div>
+            <button type="button" class="receive-message">Receive message</button>
+        </div>
     </section>
     <section class="message-box">
-      <img src="./assets/meditate.svg" alt="Yellow person meditating">
+      <h3 class="message-display"></h3>
+      <img class="med-picture" src="./assets/meditate.svg" alt="Yellow person meditating">
     </section>
-    <script type="text/javascript" src="main.js"></script>
   </body>
 </html>

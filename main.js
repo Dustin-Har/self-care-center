@@ -1,11 +1,12 @@
-affrimationButtton = document.querySelector(".affrimation");
+affirmationButton = document.querySelector(".affirmation");
 mantraButton = document.querySelector(".mantra");
 receive = document.querySelector(".receive-message");
 messageBox = document.querySelector(".message-box");
-picture = document.querySelector(".picture");
-message = document.querySelector(".message");
 
-var affrimationQuotes = [
+medPicture = document.querySelector(".med-picture");
+message = document.querySelector(".message-display");
+
+var affirmationQuotes = [
   "I forgive myself and set myself free.",
   "I believe I can be all that I want to be.",
   "I am in the process of becoming the best version of myself.",
@@ -20,7 +21,6 @@ var affrimationQuotes = [
   "I honor my body by trusting the signals that it sends me.",
   "I manifest perfect health by making smart choices.",
 ];
-
 var mantraQuotes = [
   "Breathing in, I send myself love. Breathing out, I send love to someone else who needs it.",
   "Don’t let yesterday take up too much of today.",
@@ -41,16 +41,18 @@ var mantraQuotes = [
 
 receive.addEventListener("click", displayMessage);
 
+console.log(medPicture);
+console.log(message);
 
 function displayMessage() {
-  picture.classList.add("hidden");
-  message.classList.remove("hidden");
-  if(affrimationButtton.checked === true) {
-    message.innerText = affrimationQuotes[getRandomIndex(affrimationQuotes)];
-  }else if (mantraButton.checked === true) {
+  medPicture.hidden = true;
+  if(affirmationButton.checked){
+    message.innerText = affirmationQuotes[getRandomIndex(affirmationQuotes)];
+  }else if (mantraButton.checked){
     message.innerText = mantraQuotes[getRandomIndex(mantraQuotes)];
   }
 }
+
 
 function getRandomIndex(array) {
   return Math.floor(Math.random() * array.length);
