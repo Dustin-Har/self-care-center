@@ -6,6 +6,9 @@
 * <img width="1440" alt="Screen Shot 2021-02-21 at 5 32 50 PM" src="https://user-images.githubusercontent.com/75390410/108641084-5fa67800-746b-11eb-92b6-8ff44fb5b8b5.png">
 * <img width="1440" alt="Screen Shot 2021-02-21 at 5 33 07 PM" src="https://user-images.githubusercontent.com/75390410/108641097-7220b180-746b-11eb-9fa2-051eb06a06d7.png">
 
+* Has the option to remove quote from screen by clicking remove message button.
+* <img width="1440" alt="Screen Shot 2021-02-21 at 5 54 15 PM" src="https://user-images.githubusercontent.com/75390410/108641588-fd9b4200-746d-11eb-842c-f739e57ecea3.png">
+
 ## Deploy Link to GitHub Pages
 
 * You can check out the app at GitHub pages right [here](https://github.com/Dustin-Har/self-care-center)
