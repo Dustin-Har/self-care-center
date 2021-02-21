@@ -1,6 +1,7 @@
 affirmationButton = document.querySelector(".affirmation");
 mantraButton = document.querySelector(".mantra");
 receive = document.querySelector(".receive-message");
+remove = document.querySelector(".remove-message");
 messageBox = document.querySelector(".message-box");
 
 medPicture = document.querySelector(".med-picture");
@@ -40,15 +41,26 @@ var mantraQuotes = [
 ]
 
 receive.addEventListener("click", displayMessage);
+remove.addEventListener("click", revertScreen);
 
 
 function displayMessage() {
-  medPicture.hidden = true;
-  if(affirmationButton.checked){
-    message.innerText = affirmationQuotes[getRandomIndex(affirmationQuotes)];
-  }else if (mantraButton.checked){
-    message.innerText = mantraQuotes[getRandomIndex(mantraQuotes)];
+  if (affirmationButton.checked === true || mantraButton.checked === true){
+    medPicture.hidden = true;
+    remove.hidden = false;
+    message.hidden = false;
+    if(affirmationButton.checked){
+      message.innerText = affirmationQuotes[getRandomIndex(affirmationQuotes)];
+    }else if (mantraButton.checked){
+      message.innerText = mantraQuotes[getRandomIndex(mantraQuotes)];
+    }
   }
+}
+
+function revertScreen(){
+  medPicture.hidden = false;
+  remove.hidden = true;
+  message.hidden = true;
 }
 
 
