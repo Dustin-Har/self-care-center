@@ -1,13 +1,9 @@
-var head = document.querySelector(".self-care");
-var affri = document.querySelector(".affrimation");
-var mantr = document.querySelector(".mantra");
-var mesButton = document.querySelector(".receive-message");
-var box = document.querySelector(".message-box");
-
-mesButton.addEventListener("click", function() {
-  message.innerText = "hello"
-})
-
+affrimationButtton = document.querySelector(".affrimation");
+mantraButton = document.querySelector(".mantra");
+receive = document.querySelector(".receive-message");
+messageBox = document.querySelector(".message-box");
+picture = document.querySelector(".picture");
+message = document.querySelector(".message");
 
 var affrimationQuotes = [
   "I forgive myself and set myself free.",
@@ -42,3 +38,20 @@ var mantraQuotes = [
   "Onward and upward.",
   "I am the sky, the rest is weather.",
 ]
+
+receive.addEventListener("click", displayMessage);
+
+
+function displayMessage() {
+  picture.classList.add("hidden");
+  message.classList.remove("hidden");
+  if(affrimationButtton.checked === true) {
+    message.innerText = affrimationQuotes[getRandomIndex(affrimationQuotes)];
+  }else if (mantraButton.checked === true) {
+    message.innerText = mantraQuotes[getRandomIndex(mantraQuotes)];
+  }
+}
+
+function getRandomIndex(array) {
+  return Math.floor(Math.random() * array.length);
+}
