@@ -1,7 +1,10 @@
 ## How the App Works
 * the app alows the user to choose if they would like a affirmation quote or a mantra quote.
+* <img width="1440" alt="Screen Shot 2021-02-21 at 5 32 30 PM" src="https://user-images.githubusercontent.com/75390410/108641072-51f0f280-746b-11eb-9095-125d72d6796b.png">
 
 * after selecting which quote. the user will click receive message button and a random quote will appear of the selected message type.
+* <img width="1440" alt="Screen Shot 2021-02-21 at 5 32 50 PM" src="https://user-images.githubusercontent.com/75390410/108641084-5fa67800-746b-11eb-92b6-8ff44fb5b8b5.png">
+* <img width="1440" alt="Screen Shot 2021-02-21 at 5 33 07 PM" src="https://user-images.githubusercontent.com/75390410/108641097-7220b180-746b-11eb-9fa2-051eb06a06d7.png">
 
 ## Deploy Link to GitHub Pages
 
